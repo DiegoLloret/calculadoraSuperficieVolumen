@@ -163,12 +163,13 @@ namespace calculadoraSuperficieVolumen
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(459, 235);
+            this.button1.Location = new System.Drawing.Point(459, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
             this.button1.Text = "=";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
