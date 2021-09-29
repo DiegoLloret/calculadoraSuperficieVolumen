@@ -141,6 +141,7 @@ namespace calculadoraSuperficieVolumen
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "areaCirculo";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -152,6 +153,7 @@ namespace calculadoraSuperficieVolumen
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "volumenTetraedro";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton6
             // 
@@ -163,6 +165,7 @@ namespace calculadoraSuperficieVolumen
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "volumenEsfera";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // textBox4
             // 

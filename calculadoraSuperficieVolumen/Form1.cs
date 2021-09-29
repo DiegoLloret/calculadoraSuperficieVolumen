@@ -33,7 +33,7 @@ namespace calculadoraSuperficieVolumen
             int area = num * num;
             String resultado = area.ToString();
             textBox4.Text = resultado;
-                
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace calculadoraSuperficieVolumen
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             int num = int.Parse(textBox1.Text);
-            int volumen = num^3;
+            int volumen = num * num*num;
             String resultado = volumen.ToString();
             textBox4.Text = resultado;
         }
@@ -53,9 +53,35 @@ namespace calculadoraSuperficieVolumen
         {
             int b = int.Parse(textBox1.Text);
             int altura = int.Parse(textBox2.Text);
-            int area =  (b*altura)/2;
+            double area = b*altura/2.0;
             String resultado = area.ToString();
             textBox4.Text = resultado;
         }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            //int area_base = int.Parse(textBox3.Text);
+            int altura = int.Parse(textBox2.Text);
+
+            double volumen_tetraedro = ((Math.Sqrt(2))/12)*(altura*altura*altura);
+            String resultado = volumen_tetraedro.ToString();
+            textBox4.Text = resultado;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            int radio = int.Parse(textBox2.Text);
+            double area = System.Math.PI * radio * radio;
+            String resultado = area.ToString();
+            textBox4.Text = resultado;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            int radio = int.Parse(textBox2.Text);
+            double volumen_esfera = (4  * System.Math.PI * (radio * radio * radio))/3;
+            String resultado = volumen_esfera.ToString();
+            textBox4.Text = resultado;
+        }
     }
-}
+    }
